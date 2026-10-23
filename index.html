@@ -1,0 +1,1301 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio of Manasa Kulal — Third-Year B.E. Computer Science & Engineering Student specializing in AI & ML at AJ Institute of Engineering and Technology, Mangalore.">
+  <meta name="keywords" content="Manasa Kulal, Portfolio, AI, Machine Learning, Third-Year Student, AJIET Mangalore, Python, CSE">
+  <meta name="author" content="Manasa Kulal">
+
+  <title>Manasa Kulal | Third-Year B.E. Student (AI & ML) — Portfolio</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+
+  <!-- Google Fonts: Plus Jakarta Sans & Outfit -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Ambient Background Glow Gradients -->
+  <div class="ambient-glow glow-1" aria-hidden="true"></div>
+  <div class="ambient-glow glow-2" aria-hidden="true"></div>
+  <div class="ambient-glow glow-3" aria-hidden="true"></div>
+
+  <!-- NAVIGATION BAR -->
+  <header class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo" aria-label="Manasa Kulal Home">
+        <div class="logo-badge">MK</div>
+        <span class="logo-text">Manasa <span class="gradient-text">Kulal</span></span>
+      </a>
+
+      <!-- Desktop Navigation Links -->
+      <nav class="nav-links" id="navLinks" aria-label="Main Navigation">
+        <a href="#hero" class="nav-link active">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#education" class="nav-link">Education</a>
+        <a href="#languages" class="nav-link">Languages</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <!-- Action & Controls -->
+      <div class="nav-actions">
+        <!-- Theme Toggle Button -->
+        <button id="themeToggle" class="theme-toggle" aria-label="Toggle Dark and Light Mode" title="Toggle Theme">
+          <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+
+        <!-- Direct Resume Download Button in Nav -->
+        <a href="assets/Manasa_Kulal_Resume.pdf" download="Manasa_Kulal_Resume.pdf" class="btn btn-outline btn-sm nav-resume-btn" title="Download Manasa Kulal's Resume">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+            <polyline points="7 10 12 15 17 10"></polyline>
+            <line x1="12" y1="15" x2="12" y2="3"></line>
+          </svg>
+          <span>Resume</span>
+        </a>
+
+        <!-- Mobile Hamburger Button -->
+        <button id="mobileMenuBtn" class="mobile-menu-btn" aria-label="Open Navigation Menu" aria-expanded="false" aria-controls="mobileDrawer">
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <div class="mobile-drawer" id="mobileDrawer" aria-hidden="true">
+    <div class="drawer-content">
+      <nav class="mobile-nav-links">
+        <a href="#hero" class="mobile-nav-link">Home</a>
+        <a href="#about" class="mobile-nav-link">About</a>
+        <a href="#skills" class="mobile-nav-link">Skills</a>
+        <a href="#projects" class="mobile-nav-link">Projects</a>
+        <a href="#education" class="mobile-nav-link">Education</a>
+        <a href="#languages" class="mobile-nav-link">Languages</a>
+        <a href="#contact" class="mobile-nav-link">Contact</a>
+      </nav>
+      <div class="drawer-footer">
+        <a href="assets/Manasa_Kulal_Resume.pdf" download="Manasa_Kulal_Resume.pdf" class="btn btn-primary w-full">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+            <polyline points="7 10 12 15 17 10"></polyline>
+            <line x1="12" y1="15" x2="12" y2="3"></line>
+          </svg>
+          <span>Download Resume (PDF)</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section class="hero-section" id="hero">
+      <div class="container hero-grid">
+        <div class="hero-text-col">
+          <div class="status-pill animate-fade-in">
+            <span class="status-dot"></span>
+            <span>Available for Internships & AI/ML Projects</span>
+          </div>
+
+          <h1 class="hero-heading animate-fade-in">
+            Hello, I'm <br>
+            <span class="gradient-text hero-name">Manasa Kulal</span>
+          </h1>
+
+          <div class="hero-role-wrapper animate-fade-in">
+            <span class="role-badge">Third-Year Student</span>
+            <p class="hero-subtitle">
+              Third-Year B.E. Computer Science and Engineering Student specializing in <span class="highlight-text">Artificial Intelligence &amp; Machine Learning (AI &amp; ML)</span> at AJ Institute of Engineering and Technology, Mangalore.
+            </p>
+          </div>
+
+          <p class="hero-bio animate-fade-in">
+            Driven by a curiosity for intelligent algorithms, natural language processing, and data-driven systems. Eager to leverage technical fundamentals and problem-solving skills to build impactful software solutions during upcoming engineering internships.
+          </p>
+
+          <div class="hero-cta-group animate-fade-in">
+            <a href="#projects" class="btn btn-primary">
+              <span>Explore Projects</span>
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+
+            <!-- Functional Resume Download -->
+            <a href="assets/Manasa_Kulal_Resume.pdf" download="Manasa_Kulal_Resume.pdf" id="resumeDownloadHero" class="btn btn-secondary">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                <polyline points="7 10 12 15 17 10"></polyline>
+                <line x1="12" y1="15" x2="12" y2="3"></line>
+              </svg>
+              <span>Download Resume</span>
+            </a>
+
+            <a href="#contact" class="btn btn-outline">
+              <span>Let's Connect</span>
+            </a>
+          </div>
+
+          <div class="hero-quick-meta animate-fade-in">
+            <div class="meta-item">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+              <span>Mangalore, Karnataka, India</span>
+            </div>
+            <div class="meta-item">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+              <span>Graduation: 2028</span>
+            </div>
+            <div class="meta-item">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 10v6M2 10l10-5 10 5-10 5z"></path><path d="M6 12v5c3 3 9 3 12 0v-5"></path></svg>
+              <span>AJIET Mangalore</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Visual Interactive Card -->
+        <div class="hero-visual-col animate-fade-in">
+          <div class="hero-card-glass">
+            <div class="card-glow-circle"></div>
+
+            <div class="profile-header-card">
+              <div class="avatar-container">
+                <div class="avatar-gradient-border">
+                  <div class="avatar-inner">
+                    <span class="avatar-letters">MK</span>
+                  </div>
+                </div>
+                <div class="floating-badge badge-top-right">
+                  <span class="badge-icon">🤖</span>
+                  <span>AI &amp; ML</span>
+                </div>
+              </div>
+
+              <h2 class="profile-card-name">Manasa Kulal</h2>
+              <p class="profile-card-title">Third-Year B.E. Student</p>
+              <p class="profile-card-college">AJ Institute of Engineering and Technology</p>
+
+              <div class="academic-timeline-tag">
+                <span class="dot-indicator"></span>
+                <span>2024 – 2028 Expected</span>
+              </div>
+            </div>
+
+            <!-- Terminal / Code Snippet Preview -->
+            <div class="code-preview-widget">
+              <div class="code-preview-bar">
+                <span class="terminal-dot dot-red"></span>
+                <span class="terminal-dot dot-yellow"></span>
+                <span class="terminal-dot dot-green"></span>
+                <span class="terminal-title">student_profile.py</span>
+              </div>
+              <pre class="code-preview-body"><code><span class="code-keyword">class</span> <span class="code-class">Engineer</span>:
+    <span class="code-param">name</span> = <span class="code-string">"Manasa Kulal"</span>
+    <span class="code-param">academic_standing</span> = <span class="code-string">"Third-Year Student"</span>
+    <span class="code-param">college</span> = <span class="code-string">"AJIET, Mangalore"</span>
+    <span class="code-param">focus</span> = [<span class="code-string">"AI"</span>, <span class="code-string">"ML"</span>, <span class="code-string">"Python"</span>, <span class="code-string">"DBMS"</span>]
+    <span class="code-param">goal</span> = <span class="code-string">"Solve real-world problems"</span></code></pre>
+            </div>
+
+            <!-- Floating Pill Tags -->
+            <div class="hero-floating-pills">
+              <span class="pill-chip">Python 🐍</span>
+              <span class="pill-chip">NLP &amp; TF-IDF 🧠</span>
+              <span class="pill-chip">MySQL 🗄️</span>
+              <span class="pill-chip">Gradio UI ⚡</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT ME SECTION -->
+    <section class="section about-section" id="about">
+      <div class="container">
+        <div class="section-title-wrap">
+          <span class="section-tag">About Me</span>
+          <h2 class="section-heading">My Learning Journey &amp; Passion</h2>
+          <p class="section-subtext">
+            Blending computational intelligence with practical software development to engineer meaningful digital solutions.
+          </p>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-narrative">
+            <h3 class="about-lead">
+              A motivated <span class="gradient-text">Third-year student</span> exploring the frontiers of Artificial Intelligence and Machine Learning.
+            </h3>
+            <p>
+              I am currently in my third year of pursuing a <strong>Bachelor of Engineering (B.E.) in Computer Science and Engineering</strong>, with an intentional specialization in <strong>Artificial Intelligence and Machine Learning (AI &amp; ML)</strong> at <strong>AJ Institute of Engineering and Technology (AJIET), Mangalore</strong>.
+            </p>
+            <p>
+              My academic and personal journey centers on understanding how intelligent models can enhance everyday human experiences. From architecting Python-based language translation systems to designing automated FAQ chatbots using text preprocessing, TF-IDF, and cosine similarity, I delight in transforming raw theoretical concepts into functional prototypes.
+            </p>
+            <p>
+              Beyond intelligent algorithms, I value full-system understanding—integrating databases with MySQL, developing responsive interfaces with modern HTML, CSS, and JavaScript, and building robust backend connections with PHP and XAMPP. I actively reinforce my university learning with specialized industry courses from <strong>Infosys Springboard</strong>.
+            </p>
+
+            <div class="about-action-row">
+              <a href="#contact" class="btn btn-primary btn-sm">Get in Touch</a>
+              <a href="assets/resume.html" target="_blank" class="btn btn-outline btn-sm" title="Open printable web resume">View Web Resume</a>
+            </div>
+          </div>
+
+          <!-- Quick Information Matrix -->
+          <div class="about-matrix-card">
+            <div class="matrix-header">
+              <div class="matrix-badge">Profile Overview</div>
+              <span class="matrix-status">Open to Internships</span>
+            </div>
+
+            <div class="matrix-list">
+              <div class="matrix-item">
+                <span class="matrix-label">Current Standing</span>
+                <span class="matrix-value highlight">Third-Year Student</span>
+              </div>
+              <div class="matrix-item">
+                <span class="matrix-label">Specialization</span>
+                <span class="matrix-value">AI &amp; Machine Learning</span>
+              </div>
+              <div class="matrix-item">
+                <span class="matrix-label">Institution</span>
+                <span class="matrix-value">AJ Institute of Engineering and Technology</span>
+              </div>
+              <div class="matrix-item">
+                <span class="matrix-label">Graduation Year</span>
+                <span class="matrix-value">2028 (Expected)</span>
+              </div>
+              <div class="matrix-item">
+                <span class="matrix-label">Location</span>
+                <span class="matrix-value">Mangalore, Karnataka, India</span>
+              </div>
+              <div class="matrix-item">
+                <span class="matrix-label">Email</span>
+                <span class="matrix-value"><a href="mailto:kulalmanasa93@gmail.com" class="link-colored">kulalmanasa93@gmail.com</a></span>
+              </div>
+              <div class="matrix-item">
+                <span class="matrix-label">Phone</span>
+                <span class="matrix-value"><a href="tel:9483649608" class="link-colored">9483649608</a></span>
+              </div>
+              <div class="matrix-item">
+                <span class="matrix-label">LinkedIn</span>
+                <span class="matrix-value">
+                  <a href="https://www.linkedin.com/in/manasa-kulal-204542434" target="_blank" rel="noopener noreferrer" class="link-colored">
+                    manasa-kulal-204542434 ↗
+                  </a>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Core Focus Cards -->
+        <div class="focus-cards-grid">
+          <div class="focus-card">
+            <div class="focus-icon-wrap icon-ai">
+              <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M12 2a4 4 0 0 1 4 4v1a4 4 0 0 1-4 4 4 4 0 0 1-4-4V6a4 4 0 0 1 4-4z"></path>
+                <path d="M18 10a6 6 0 0 1-6 6 6 6 0 0 1-6-6"></path>
+                <line x1="12" y1="16" x2="12" y2="22"></line>
+                <line x1="8" y1="22" x2="16" y2="22"></line>
+              </svg>
+            </div>
+            <h4 class="focus-title">AI &amp; Machine Learning</h4>
+            <p class="focus-desc">Applying algorithms, similarity ranking, vectorization, and text preprocessing to solve data-centric challenges.</p>
+          </div>
+
+          <div class="focus-card">
+            <div class="focus-icon-wrap icon-code">
+              <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <polyline points="16 18 22 12 16 6"></polyline>
+                <polyline points="8 6 2 12 8 18"></polyline>
+              </svg>
+            </div>
+            <h4 class="focus-title">Algorithmic Problem-Solving</h4>
+            <p class="focus-desc">Leveraging Python and C programming to master core data structures, algorithmic efficiency, and memory principles.</p>
+          </div>
+
+          <div class="focus-card">
+            <div class="focus-icon-wrap icon-db">
+              <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+                <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path>
+                <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
+              </svg>
+            </div>
+            <h4 class="focus-title">Databases &amp; Web Systems</h4>
+            <p class="focus-desc">Designing normalized relational databases with MySQL/DBMS and linking them with clean web interfaces.</p>
+          </div>
+
+          <div class="focus-card">
+            <div class="focus-icon-wrap icon-growth">
+              <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <circle cx="12" cy="12" r="10"></circle>
+                <polyline points="12 6 12 12 14 14"></polyline>
+              </svg>
+            </div>
+            <h4 class="focus-title">Continuous Growth</h4>
+            <p class="focus-desc">Dedicated to disciplined self-improvement through industry certifications, collaborative teamwork, and creative engineering.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TECHNICAL SKILLS SECTION -->
+    <section class="section skills-section" id="skills">
+      <div class="container">
+        <div class="section-title-wrap">
+          <span class="section-tag">Capabilities</span>
+          <h2 class="section-heading">Technical &amp; Soft Skills</h2>
+          <p class="section-subtext">
+            A comprehensive overview of programming languages, artificial intelligence techniques, web technologies, and interpersonal strengths.
+          </p>
+        </div>
+
+        <!-- Technical Skills Group -->
+        <div class="skills-category-group">
+          <h3 class="category-title">
+            <span class="category-icon">💻</span>
+            <span>Core Technical Stack</span>
+          </h3>
+
+          <div class="skills-grid">
+            <!-- Python -->
+            <div class="skill-card">
+              <div class="skill-header">
+                <div class="skill-icon-box">
+                  <!-- Python Official SVG -->
+                  <svg viewBox="0 0 128 128" width="36" height="36" aria-hidden="true">
+                    <path fill="#387EB8" d="M63.2 4.1c-13.6 0-25.5 3.3-25.5 13.9v10.3h25.8v3.6H23.1C9.6 31.9 0 41.5 0 55.4c0 14.1 8.2 23 21.6 23.4v-11.2c0-7.8 7.3-13.7 15.3-13.7h24.8c6.6 0 12-5.4 12-12.1V16.3c0-6.9-8-12.2-10.5-12.2zm-12.8 7.4c2.5 0 4.5 2.1 4.5 4.6 0 2.5-2 4.5-4.5 4.5s-4.6-2-4.6-4.5c0-2.5 2.1-4.6 4.6-4.6z"/>
+                    <path fill="#FFE052" d="M64.8 123.9c13.6 0 25.5-3.3 25.5-13.9V99.7H64.5v-3.6h40.4c13.5 0 23.1-9.6 23.1-23.5 0-14.1-8.2-23-21.6-23.4v11.2c0 7.8-7.3 13.7-15.3 13.7H66.3c-6.6 0-12 5.4-12 12.1v21.5c0 6.9 8 12.2 10.5 12.2zm12.8-7.4c-2.5 0-4.5-2.1-4.5-4.6 0-2.5 2-4.5 4.5-4.5s4.6 2 4.6 4.5c0 2.5-2.1 4.6-4.6 4.6z"/>
+                  </svg>
+                </div>
+                <div class="skill-meta">
+                  <h4 class="skill-name">Python</h4>
+                  <span class="skill-badge badge-primary">Primary Language</span>
+                </div>
+              </div>
+              <p class="skill-desc">Core language for AI/ML modeling, NLP preprocessing, Gradio UI integration, automation, and algorithmic problem solving.</p>
+              <div class="skill-tags">
+                <span>AI / ML</span>
+                <span>NLP</span>
+                <span>OOP</span>
+              </div>
+            </div>
+
+            <!-- C Programming -->
+            <div class="skill-card">
+              <div class="skill-header">
+                <div class="skill-icon-box">
+                  <!-- C Logo SVG -->
+                  <svg viewBox="0 0 128 128" width="36" height="36" aria-hidden="true">
+                    <path fill="#00599C" d="M116.6 89.2c-7.9 14.1-22.7 23.7-39.7 24.8-21.5 1.5-41.9-10.4-51.4-29.6C16 65.2 19 41.8 33 27.6 47 13.4 68.6 9.8 86.4 18.6c11.6 5.8 20.4 15.6 25.1 27.6l-18.4 7.9c-2.6-7-7.7-12.8-14.4-16.2-11.2-5.7-24.8-3.4-33.6 5.5-8.8 8.9-10.7 23.6-4.7 35.8 6 12 18.8 19.5 32.3 18.5 10.7-.7 20-6.8 24.9-15.7l19 9.5z"/>
+                  </svg>
+                </div>
+                <div class="skill-meta">
+                  <h4 class="skill-name">C Programming</h4>
+                  <span class="skill-badge badge-blue">Foundational</span>
+                </div>
+              </div>
+              <p class="skill-desc">Strong foundation in memory management, pointers, low-level data structures, and computer science principles.</p>
+              <div class="skill-tags">
+                <span>Data Structures</span>
+                <span>Pointers</span>
+                <span>Logic</span>
+              </div>
+            </div>
+
+            <!-- Artificial Intelligence -->
+            <div class="skill-card">
+              <div class="skill-header">
+                <div class="skill-icon-box icon-accent-box">
+                  <!-- AI SVG Icon -->
+                  <svg viewBox="0 0 24 24" width="36" height="36" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <rect x="4" y="4" width="16" height="16" rx="2"></rect>
+                    <rect x="9" y="9" width="6" height="6"></rect>
+                    <line x1="9" y1="1" x2="9" y2="4"></line>
+                    <line x1="15" y1="1" x2="15" y2="4"></line>
+                    <line x1="9" y1="20" x2="9" y2="23"></line>
+                    <line x1="15" y1="20" x2="15" y2="23"></line>
+                    <line x1="20" y1="9" x2="23" y2="9"></line>
+                    <line x1="20" y1="14" x2="23" y2="14"></line>
+                    <line x1="1" y1="9" x2="4" y2="9"></line>
+                    <line x1="1" y1="14" x2="4" y2="14"></line>
+                  </svg>
+                </div>
+                <div class="skill-meta">
+                  <h4 class="skill-name">Artificial Intelligence</h4>
+                  <span class="skill-badge badge-special">Specialization</span>
+                </div>
+              </div>
+              <p class="skill-desc">Theoretical and practical study of intelligent agents, problem formulations, heuristic search, and AI-driven translation.</p>
+              <div class="skill-tags">
+                <span>Intelligent Systems</span>
+                <span>Search</span>
+                <span>Heuristics</span>
+              </div>
+            </div>
+
+            <!-- Machine Learning -->
+            <div class="skill-card">
+              <div class="skill-header">
+                <div class="skill-icon-box icon-accent-box">
+                  <!-- ML Nodes SVG -->
+                  <svg viewBox="0 0 24 24" width="36" height="36" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <circle cx="6" cy="6" r="3"></circle>
+                    <circle cx="18" cy="6" r="3"></circle>
+                    <circle cx="12" cy="18" r="3"></circle>
+                    <line x1="8.5" y1="7.5" x2="15.5" y2="7.5"></line>
+                    <line x1="7.5" y1="8.5" x2="10.5" y2="15.5"></line>
+                    <line x1="16.5" y1="8.5" x2="13.5" y2="15.5"></line>
+                  </svg>
+                </div>
+                <div class="skill-meta">
+                  <h4 class="skill-name">Machine Learning</h4>
+                  <span class="skill-badge badge-special">Specialization</span>
+                </div>
+              </div>
+              <p class="skill-desc">Text preprocessing, TF-IDF vectorization, cosine similarity metrics, classification principles, and data analysis.</p>
+              <div class="skill-tags">
+                <span>TF-IDF</span>
+                <span>Cosine Similarity</span>
+                <span>Preprocessing</span>
+              </div>
+            </div>
+
+            <!-- HTML -->
+            <div class="skill-card">
+              <div class="skill-header">
+                <div class="skill-icon-box">
+                  <!-- HTML5 SVG -->
+                  <svg viewBox="0 0 128 128" width="36" height="36" aria-hidden="true">
+                    <path fill="#E34F26" d="M19.1 11.2l9.3 104.7 35.6 9.9 35.6-9.9 9.3-104.7H19.1z"/>
+                    <path fill="#EF652A" d="M64 123.6l33.6-9.3 8.3-93.5H64v102.8z"/>
+                    <path fill="#ECECEC" d="M64 54.7H47.1l-1.2-13.8H64V27.6H31.7l3.5 39.7H64V54.7zm0 37.9l-.1.1-14.2-3.8-.9-10.2H35.4l1.8 20.3 26.8 7.4v-13.8z"/>
+                    <path fill="#FFFFFF" d="M64 54.7h16.9l-1.6 17.8-15.3 4.1v14.1l26.8-7.4 3.7-41.2H64V54.7zm0-27.1v13.3h32.3l.6-7-.6-6.3H64z"/>
+                  </svg>
+                </div>
+                <div class="skill-meta">
+                  <h4 class="skill-name">HTML</h4>
+                  <span class="skill-badge badge-orange">Frontend</span>
+                </div>
+              </div>
+              <p class="skill-desc">Semantic HTML5 structuring, web accessibility standards, clean page markup, and intuitive form designs.</p>
+              <div class="skill-tags">
+                <span>HTML5</span>
+                <span>Semantics</span>
+                <span>Forms</span>
+              </div>
+            </div>
+
+            <!-- CSS -->
+            <div class="skill-card">
+              <div class="skill-header">
+                <div class="skill-icon-box">
+                  <!-- CSS3 SVG -->
+                  <svg viewBox="0 0 128 128" width="36" height="36" aria-hidden="true">
+                    <path fill="#1572B6" d="M19.1 11.2l9.3 104.7 35.6 9.9 35.6-9.9 9.3-104.7H19.1z"/>
+                    <path fill="#33A9DC" d="M64 123.6l33.6-9.3 8.3-93.5H64v102.8z"/>
+                    <path fill="#ECECEC" d="M64 54.7H47.1l-1.2-13.8H64V27.6H31.7l3.5 39.7H64V54.7zm0 37.9l-.1.1-14.2-3.8-.9-10.2H35.4l1.8 20.3 26.8 7.4v-13.8z"/>
+                    <path fill="#FFFFFF" d="M64 54.7h16.9l-1.6 17.8-15.3 4.1v14.1l26.8-7.4 3.7-41.2H64V54.7zm0-27.1v13.3h32.3l.6-7-.6-6.3H64z"/>
+                  </svg>
+                </div>
+                <div class="skill-meta">
+                  <h4 class="skill-name">CSS</h4>
+                  <span class="skill-badge badge-blue">Styling</span>
+                </div>
+              </div>
+              <p class="skill-desc">Modern responsive UI design, CSS Flexbox &amp; Grid layouts, glassmorphism, animations, and dark/light themes.</p>
+              <div class="skill-tags">
+                <span>CSS3</span>
+                <span>Flexbox &amp; Grid</span>
+                <span>Animations</span>
+              </div>
+            </div>
+
+            <!-- JavaScript -->
+            <div class="skill-card">
+              <div class="skill-header">
+                <div class="skill-icon-box">
+                  <!-- JS SVG -->
+                  <svg viewBox="0 0 128 128" width="36" height="36" aria-hidden="true">
+                    <rect width="128" height="128" fill="#F7DF1E"/>
+                    <path fill="#000000" d="M72.5 102.4c3.4 5.6 7.9 9.8 15.7 9.8 6.6 0 10.8-3.3 10.8-7.8 0-5.5-4.4-7.5-11.8-10.7l-4.1-1.8c-11.8-5-19.6-11.4-19.6-24.8 0-12.3 9.4-21.7 24.3-21.7 10.6 0 18.2 4.1 23.5 13.5l-11.6 7.4c-2.6-4.6-5.5-6.6-11.9-6.6-4.6 0-8 2.8-8 6.6 0 4.6 3.4 6.7 9.8 9.5l4.1 1.8c13.9 6 21.8 12.3 21.8 25.9 0 14.8-11.6 22.8-26.6 22.8-14.9 0-24.4-6.9-29.2-16.7l12.3-7zm-44.8.4c2.5 4.3 4.8 7.9 10.3 7.9 5.3 0 8.7-2.1 8.7-10.3V46.6h15.2v54c0 16.5-9.7 23.8-23.7 23.8-12.7 0-20.1-6.5-23.9-15.6l13.4-6z"/>
+                  </svg>
+                </div>
+                <div class="skill-meta">
+                  <h4 class="skill-name">JavaScript</h4>
+                  <span class="skill-badge badge-yellow">Frontend Logic</span>
+                </div>
+              </div>
+              <p class="skill-desc">Dynamic DOM manipulation, client-side validation, event handling, asynchronous actions, and interactive web widgets.</p>
+              <div class="skill-tags">
+                <span>DOM</span>
+                <span>Events</span>
+                <span>ES6+</span>
+              </div>
+            </div>
+
+            <!-- DBMS -->
+            <div class="skill-card">
+              <div class="skill-header">
+                <div class="skill-icon-box">
+                  <!-- DBMS Database SVG -->
+                  <svg viewBox="0 0 24 24" width="36" height="36" fill="none" stroke="#8B5CF6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+                    <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path>
+                    <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
+                  </svg>
+                </div>
+                <div class="skill-meta">
+                  <h4 class="skill-name">DBMS</h4>
+                  <span class="skill-badge badge-purple">Core Architecture</span>
+                </div>
+              </div>
+              <p class="skill-desc">Relational database concepts, entity-relationship modeling, database schema normalization, and ACID properties.</p>
+              <div class="skill-tags">
+                <span>ER Diagrams</span>
+                <span>Normalization</span>
+                <span>ACID</span>
+              </div>
+            </div>
+
+            <!-- MySQL -->
+            <div class="skill-card">
+              <div class="skill-header">
+                <div class="skill-icon-box">
+                  <!-- MySQL SVG -->
+                  <svg viewBox="0 0 128 128" width="36" height="36" aria-hidden="true">
+                    <path fill="#00758F" d="M64 4C30.9 4 4 30.9 4 64s26.9 60 60 60 60-26.9 60-60S97.1 4 64 4zm28.8 84.7c-2.3 2.5-5.2 4.4-8.6 5.6-3.4 1.2-7.1 1.8-11.2 1.8-6.1 0-11.4-1.4-15.8-4.2-4.4-2.8-7.8-6.8-10.2-12-2.4-5.2-3.6-11.3-3.6-18.4 0-6.9 1.3-13 3.9-18.2s6.3-9.4 11-12.3c4.7-2.9 10.3-4.4 16.7-4.4 4.8 0 9.1.8 12.8 2.3s6.8 3.6 9.2 6.3l-5.6 5.3c-1.8-2-4.1-3.6-6.8-4.6-2.7-1.1-5.9-1.6-9.6-1.6-4.6 0-8.6 1.1-12 3.3-3.4 2.2-6 5.4-7.8 9.6-1.8 4.2-2.7 9.1-2.7 14.8 0 5.6.9 10.5 2.7 14.6 1.8 4.1 4.4 7.2 7.7 9.3 3.4 2.1 7.3 3.2 11.8 3.2 3.9 0 7.3-.6 10.2-1.9 2.9-1.2 5.3-2.9 7.2-5.1l5.7 4.7z"/>
+                  </svg>
+                </div>
+                <div class="skill-meta">
+                  <h4 class="skill-name">MySQL</h4>
+                  <span class="skill-badge badge-teal">Relational DB</span>
+                </div>
+              </div>
+              <p class="skill-desc">Writing SQL queries, joins, indexes, stored procedures, table constraints, and integrating databases with PHP/XAMPP.</p>
+              <div class="skill-tags">
+                <span>SQL Queries</span>
+                <span>Joins &amp; Indexes</span>
+                <span>XAMPP</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Soft Skills Group -->
+        <div class="skills-category-group soft-skills-group">
+          <h3 class="category-title">
+            <span class="category-icon">🌟</span>
+            <span>Professional Soft Skills</span>
+          </h3>
+
+          <div class="soft-skills-grid">
+            <div class="soft-skill-pill">
+              <span class="soft-icon">🗣️</span>
+              <div class="soft-content">
+                <span class="soft-title">Communication</span>
+                <span class="soft-desc">Clear technical articulation &amp; multilingual expression</span>
+              </div>
+            </div>
+
+            <div class="soft-skill-pill">
+              <span class="soft-icon">🧩</span>
+              <div class="soft-content">
+                <span class="soft-title">Problem-Solving</span>
+                <span class="soft-desc">Analytical breakdown of complex engineering issues</span>
+              </div>
+            </div>
+
+            <div class="soft-skill-pill">
+              <span class="soft-icon">🤝</span>
+              <div class="soft-content">
+                <span class="soft-title">Teamwork</span>
+                <span class="soft-desc">Collaborative mindset &amp; dependable peer partner</span>
+              </div>
+            </div>
+
+            <div class="soft-skill-pill">
+              <span class="soft-icon">⏱️</span>
+              <div class="soft-content">
+                <span class="soft-title">Time Management</span>
+                <span class="soft-desc">Disciplined execution of academic &amp; technical projects</span>
+              </div>
+            </div>
+
+            <div class="soft-skill-pill">
+              <span class="soft-icon">💡</span>
+              <div class="soft-content">
+                <span class="soft-title">Creative Thinking</span>
+                <span class="soft-desc">User-centered innovation &amp; novel interface workflows</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS SECTION -->
+    <section class="section projects-section" id="projects">
+      <div class="container">
+        <div class="section-title-wrap">
+          <span class="section-tag">Featured Work</span>
+          <h2 class="section-heading">Showcased Projects</h2>
+          <p class="section-subtext">
+            Practical academic implementations highlighting artificial intelligence techniques, natural language processing, and web database systems.
+          </p>
+        </div>
+
+        <div class="projects-grid">
+          <!-- Project 1: Language Translation Tool -->
+          <article class="project-card" data-project="translation">
+            <div class="project-card-banner">
+              <div class="banner-gradient banner-grad-1"></div>
+              <div class="banner-badge">AI / Machine Learning</div>
+              <div class="banner-icon-watermark">🌐</div>
+            </div>
+
+            <div class="project-content">
+              <div class="project-header">
+                <h3 class="project-title">Language Translation Tool</h3>
+                <span class="project-type-tag">Python &amp; AI Techniques</span>
+              </div>
+
+              <p class="project-description">
+                A Python-based language translation project designed to help users communicate seamlessly across languages using AI-related techniques. Features structured text mapping and linguistic transformation workflows.
+              </p>
+
+              <div class="project-tags">
+                <span class="tag">Python</span>
+                <span class="tag">AI Techniques</span>
+                <span class="tag">NLP</span>
+                <span class="tag">Cross-Language</span>
+              </div>
+
+              <div class="project-card-actions">
+                <button class="btn btn-primary btn-sm open-modal-btn" data-target="modal-translation">
+                  <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>
+                  <span>Project Overview</span>
+                </button>
+                <a href="mailto:kulalmanasa93@gmail.com?subject=Inquiry%20Regarding%20Language%20Translation%20Tool&body=Hi%20Manasa,%20I%20am%20interested%20in%20learning%20more%20about%20your%20Language%20Translation%20Tool%20project." class="btn btn-outline btn-sm request-code-btn" title="Inquire / Request Source Code">
+                  <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                  <span>Request Code</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2: General FAQ Chatbot -->
+          <article class="project-card" data-project="chatbot">
+            <div class="project-card-banner">
+              <div class="banner-gradient banner-grad-2"></div>
+              <div class="banner-badge">NLP &amp; Conversational AI</div>
+              <div class="banner-icon-watermark">💬</div>
+            </div>
+
+            <div class="project-content">
+              <div class="project-header">
+                <h3 class="project-title">General FAQ Chatbot</h3>
+                <span class="project-type-tag">Python &amp; Gradio UI</span>
+              </div>
+
+              <p class="project-description">
+                A chatbot developed using Python, text preprocessing, TF-IDF vectorization, cosine similarity, and an interactive Gradio interface to match user queries with highly relevant answers.
+              </p>
+
+              <div class="project-tags">
+                <span class="tag">Python</span>
+                <span class="tag">Text Preprocessing</span>
+                <span class="tag">TF-IDF</span>
+                <span class="tag">Cosine Similarity</span>
+                <span class="tag">Gradio</span>
+              </div>
+
+              <div class="project-card-actions">
+                <button class="btn btn-primary btn-sm open-modal-btn" data-target="modal-chatbot">
+                  <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>
+                  <span>Project Overview</span>
+                </button>
+                <a href="mailto:kulalmanasa93@gmail.com?subject=Inquiry%20Regarding%20General%20FAQ%20Chatbot&body=Hi%20Manasa,%20I%20am%20interested%20in%20learning%20more%20about%20your%20General%20FAQ%20Chatbot%20project." class="btn btn-outline btn-sm request-code-btn" title="Inquire / Request Source Code">
+                  <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                  <span>Request Code</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 3: Blood Management System -->
+          <article class="project-card" data-project="blood-mgmt">
+            <div class="project-card-banner">
+              <div class="banner-gradient banner-grad-3"></div>
+              <div class="banner-badge">Web &amp; Database Systems</div>
+              <div class="banner-icon-watermark">🩸</div>
+            </div>
+
+            <div class="project-content">
+              <div class="project-header">
+                <h3 class="project-title">Blood Management System</h3>
+                <span class="project-type-tag">PHP &amp; MySQL Full-Stack</span>
+              </div>
+
+              <p class="project-description">
+                A web-based blood donor management project using PHP, MySQL, XAMPP, HTML, and JavaScript. Streamlines donor registration, blood group inventory tracking, and critical recipient coordination.
+              </p>
+
+              <div class="project-tags">
+                <span class="tag">PHP</span>
+                <span class="tag">MySQL</span>
+                <span class="tag">XAMPP</span>
+                <span class="tag">HTML5</span>
+                <span class="tag">JavaScript</span>
+              </div>
+
+              <div class="project-card-actions">
+                <button class="btn btn-primary btn-sm open-modal-btn" data-target="modal-blood">
+                  <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>
+                  <span>Project Overview</span>
+                </button>
+                <a href="mailto:kulalmanasa93@gmail.com?subject=Inquiry%20Regarding%20Blood%20Management%20System&body=Hi%20Manasa,%20I%20am%20interested%20in%20learning%20more%20about%20your%20Blood%20Management%20System%20project." class="btn btn-outline btn-sm request-code-btn" title="Inquire / Request Source Code">
+                  <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                  <span>Request Code</span>
+                </a>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <!-- Academic Repository Notice -->
+        <div class="project-note-banner">
+          <div class="note-icon">ℹ️</div>
+          <div class="note-text">
+            <strong>Source Code &amp; Academic Repositories:</strong> As a Third-year student, project source code, database dumps, and demonstration recordings are available for review upon request. Reach out via email or LinkedIn to discuss technical architectures!
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EDUCATION & CERTIFICATION SECTION -->
+    <section class="section education-section" id="education">
+      <div class="container">
+        <div class="section-title-wrap">
+          <span class="section-tag">Academic Background</span>
+          <h2 class="section-heading">Education &amp; Certification</h2>
+          <p class="section-subtext">
+            My academic foundation in computer science and ongoing credentials enhancing my technical expertise.
+          </p>
+        </div>
+
+        <div class="education-grid">
+          <!-- Degree Card -->
+          <div class="timeline-card main-degree-card">
+            <div class="card-corner-ribbon">Expected 2028</div>
+            <div class="timeline-icon-box">
+              <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+              </svg>
+            </div>
+
+            <div class="timeline-content">
+              <div class="timeline-meta">
+                <span class="period-badge">2024 – 2028</span>
+                <span class="status-indicator-tag">Third-Year Student</span>
+              </div>
+
+              <h3 class="degree-title">Bachelor of Engineering (B.E.)</h3>
+              <h4 class="degree-branch">Computer Science and Engineering</h4>
+              <p class="specialization-text">
+                Specializing in <strong>Artificial Intelligence and Machine Learning (AI &amp; ML)</strong>
+              </p>
+
+              <div class="college-info">
+                <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="4" y="2" width="16" height="20" rx="2" ry="2"></rect><line x1="9" y1="22" x2="9" y2="22.01"></line><line x1="15" y1="22" x2="15" y2="22.01"></line><line x1="9" y1="6" x2="9" y2="6.01"></line><line x1="15" y1="6" x2="15" y2="6.01"></line><line x1="9" y1="10" x2="9" y2="10.01"></line><line x1="15" y1="10" x2="15" y2="10.01"></line><line x1="9" y1="14" x2="9" y2="14.01"></line><line x1="15" y1="14" x2="15" y2="14.01"></line><line x1="9" y1="18" x2="9" y2="18.01"></line><line x1="15" y1="18" x2="15" y2="18.01"></line></svg>
+                <span><strong>AJ Institute of Engineering and Technology</strong>, Mangalore, India</span>
+              </div>
+
+              <p class="degree-desc">
+                Engaged in rigorous academic study covering core computing disciplines: algorithmic thinking, machine learning methodologies, database management systems (DBMS), data structures in C/Python, and software design principles.
+              </p>
+
+              <div class="degree-highlights">
+                <span class="highlight-pill">🧠 AI &amp; ML Fundamentals</span>
+                <span class="highlight-pill">🗄️ Database Management (DBMS)</span>
+                <span class="highlight-pill">💻 Algorithmic Design</span>
+                <span class="highlight-pill">🌐 Web Technologies</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Certification Card -->
+          <div class="timeline-card cert-card">
+            <div class="timeline-icon-box cert-icon-box">
+              <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <circle cx="12" cy="8" r="7"></circle>
+                <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline>
+              </svg>
+            </div>
+
+            <div class="timeline-content">
+              <div class="timeline-meta">
+                <span class="cert-provider-badge">Infosys Springboard</span>
+                <span class="cert-verified-tag">Completed</span>
+              </div>
+
+              <h3 class="degree-title">Infosys Springboard Certifications</h3>
+              <h4 class="degree-branch">Python &amp; AI/ML Fundamentals</h4>
+
+              <p class="cert-desc">
+                Completed industry-curated coursework focused on:
+              </p>
+              <ul class="cert-list">
+                <li>Core Python programming concepts, object-oriented principles, and standard libraries.</li>
+                <li>Foundations of Artificial Intelligence, machine learning pipelines, and predictive problem-solving.</li>
+                <li>Applied technological modules complementing academic curricula with practical industry knowledge.</li>
+              </ul>
+
+              <div class="cert-footer">
+                <span class="cert-topic-tag">Python Programming</span>
+                <span class="cert-topic-tag">AI/ML Fundamentals</span>
+                <span class="cert-topic-tag">Modern Technologies</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- LANGUAGES SECTION -->
+    <section class="section languages-section" id="languages">
+      <div class="container">
+        <div class="section-title-wrap">
+          <span class="section-tag">Communication</span>
+          <h2 class="section-heading">Languages I Speak</h2>
+          <p class="section-subtext">
+            Multilingual fluency enabling effective interpersonal communication, local community engagement, and professional collaboration.
+          </p>
+        </div>
+
+        <div class="languages-grid">
+          <!-- Tulu -->
+          <div class="lang-card">
+            <div class="lang-top">
+              <span class="lang-code">TU</span>
+              <span class="lang-status native">Native</span>
+            </div>
+            <h3 class="lang-name">Tulu</h3>
+            <p class="lang-level">Native Mother Tongue</p>
+            <div class="lang-bar-track">
+              <div class="lang-bar-fill" style="width: 100%;"></div>
+            </div>
+            <p class="lang-context">Regional mother tongue of Coastal Karnataka, fostering deep local connection and cultural fluency.</p>
+          </div>
+
+          <!-- Kannada -->
+          <div class="lang-card">
+            <div class="lang-top">
+              <span class="lang-code">KN</span>
+              <span class="lang-status fluent">Fluent</span>
+            </div>
+            <h3 class="lang-name">Kannada</h3>
+            <p class="lang-level">State Language (Full Professional)</p>
+            <div class="lang-bar-track">
+              <div class="lang-bar-fill" style="width: 100%;"></div>
+            </div>
+            <p class="lang-context">Official state language of Karnataka with complete speaking, reading, and writing proficiency.</p>
+          </div>
+
+          <!-- English -->
+          <div class="lang-card">
+            <div class="lang-top">
+              <span class="lang-code">EN</span>
+              <span class="lang-status professional">Professional</span>
+            </div>
+            <h3 class="lang-name">English</h3>
+            <p class="lang-level">Professional &amp; Academic Working</p>
+            <div class="lang-bar-track">
+              <div class="lang-bar-fill" style="width: 95%;"></div>
+            </div>
+            <p class="lang-context">Primary medium of engineering instruction, technical documentation, and professional teamwork.</p>
+          </div>
+
+          <!-- Hindi -->
+          <div class="lang-card">
+            <div class="lang-top">
+              <span class="lang-code">HI</span>
+              <span class="lang-status conversational">Conversational</span>
+            </div>
+            <h3 class="lang-name">Hindi</h3>
+            <p class="lang-level">Conversational &amp; Communication</p>
+            <div class="lang-bar-track">
+              <div class="lang-bar-fill" style="width: 85%;"></div>
+            </div>
+            <p class="lang-context">National conversational proficiency for seamless cross-regional communication and collaboration.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section class="section contact-section" id="contact">
+      <div class="container">
+        <div class="section-title-wrap">
+          <span class="section-tag">Let's Connect</span>
+          <h2 class="section-heading">Get in Touch</h2>
+          <p class="section-subtext">
+            Interested in hiring me as an intern or discussing AI/ML engineering projects? Send a message or connect directly.
+          </p>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Contact Info Column -->
+          <div class="contact-info-col">
+            <div class="contact-status-box">
+              <span class="pulse-indicator"></span>
+              <div>
+                <h3 class="contact-status-title">Open for Opportunities</h3>
+                <p class="contact-status-desc">Currently in my Third Year and actively seeking internship roles in AI/ML and software engineering.</p>
+              </div>
+            </div>
+
+            <div class="contact-cards-stack">
+              <!-- Email Card -->
+              <a href="mailto:kulalmanasa93@gmail.com" class="contact-card-item">
+                <div class="contact-card-icon icon-email">
+                  <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                    <polyline points="22,6 12,13 2,6"></polyline>
+                  </svg>
+                </div>
+                <div class="contact-card-details">
+                  <span class="contact-card-label">Email Address</span>
+                  <span class="contact-card-val">kulalmanasa93@gmail.com</span>
+                </div>
+                <div class="contact-card-arrow">↗</div>
+              </a>
+
+              <!-- Phone Card -->
+              <a href="tel:9483649608" class="contact-card-item">
+                <div class="contact-card-icon icon-phone">
+                  <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                  </svg>
+                </div>
+                <div class="contact-card-details">
+                  <span class="contact-card-label">Phone Number</span>
+                  <span class="contact-card-val">+91 9483649608</span>
+                </div>
+                <div class="contact-card-arrow">↗</div>
+              </a>
+
+              <!-- LinkedIn Card -->
+              <a href="https://www.linkedin.com/in/manasa-kulal-204542434" target="_blank" rel="noopener noreferrer" class="contact-card-item">
+                <div class="contact-card-icon icon-linkedin">
+                  <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor" aria-hidden="true">
+                    <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                  </svg>
+                </div>
+                <div class="contact-card-details">
+                  <span class="contact-card-label">LinkedIn Profile</span>
+                  <span class="contact-card-val">linkedin.com/in/manasa-kulal-204542434</span>
+                </div>
+                <div class="contact-card-arrow">↗</div>
+              </a>
+
+              <!-- Location Card -->
+              <div class="contact-card-item no-hover">
+                <div class="contact-card-icon icon-location">
+                  <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                    <circle cx="12" cy="10" r="3"></circle>
+                  </svg>
+                </div>
+                <div class="contact-card-details">
+                  <span class="contact-card-label">Current Location</span>
+                  <span class="contact-card-val">Mangalore, Karnataka, India</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Contact Form Column -->
+          <div class="contact-form-col">
+            <div class="form-wrapper-card">
+              <h3 class="form-title">Send a Direct Message</h3>
+              <p class="form-subtext">
+                Fill in the form below. When submitted, it verifies your input and directly opens your prefilled email client to compose your message.
+              </p>
+
+              <form id="contactForm" novalidate>
+                <!-- Name Field -->
+                <div class="form-group">
+                  <label for="userName">Full Name <span class="required">*</span></label>
+                  <div class="input-wrap">
+                    <input type="text" id="userName" name="name" placeholder="e.g. Jane Doe" required autocomplete="name">
+                    <span class="input-status-icon" aria-hidden="true"></span>
+                  </div>
+                  <span class="error-msg" id="nameError">Please enter your name (minimum 2 characters).</span>
+                </div>
+
+                <!-- Email Field -->
+                <div class="form-group">
+                  <label for="userEmail">Email Address <span class="required">*</span></label>
+                  <div class="input-wrap">
+                    <input type="email" id="userEmail" name="email" placeholder="e.g. janedoe@company.com" required autocomplete="email">
+                    <span class="input-status-icon" aria-hidden="true"></span>
+                  </div>
+                  <span class="error-msg" id="emailError">Please enter a valid email address.</span>
+                </div>
+
+                <!-- Subject Field -->
+                <div class="form-group">
+                  <label for="userSubject">Subject <span class="required">*</span></label>
+                  <div class="input-wrap">
+                    <input type="text" id="userSubject" name="subject" placeholder="e.g. Internship Opportunity / Technical Inquiry" required>
+                    <span class="input-status-icon" aria-hidden="true"></span>
+                  </div>
+                  <span class="error-msg" id="subjectError">Please provide a subject line (minimum 3 characters).</span>
+                </div>
+
+                <!-- Message Field -->
+                <div class="form-group">
+                  <label for="userMessage">Message <span class="required">*</span></label>
+                  <div class="input-wrap">
+                    <textarea id="userMessage" name="message" rows="4" placeholder="Write your message or inquiry here..." required></textarea>
+                    <span class="input-status-icon" aria-hidden="true"></span>
+                  </div>
+                  <span class="error-msg" id="messageError">Please enter your message (minimum 10 characters).</span>
+                </div>
+
+                <!-- Submit Button -->
+                <button type="submit" id="submitBtn" class="btn btn-primary w-full">
+                  <span>Send Message via Email Draft</span>
+                  <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <line x1="22" y1="2" x2="11" y2="13"></line>
+                    <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                  </svg>
+                </button>
+
+                <!-- Transparent Client-side Disclaimer -->
+                <p class="form-disclaimer">
+                  🔒 Note: Submitting validates your message and automatically opens your device's email application with a prefilled draft to <strong>kulalmanasa93@gmail.com</strong>.
+                </p>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <div class="logo-badge">MK</div>
+            <span class="logo-text">Manasa <span class="gradient-text">Kulal</span></span>
+          </div>
+          <p class="footer-tagline">
+            Third-Year B.E. Computer Science and Engineering Student (AI &amp; ML) at AJ Institute of Engineering and Technology, Mangalore.
+          </p>
+        </div>
+
+        <div class="footer-nav">
+          <span class="footer-nav-title">Quick Links</span>
+          <div class="footer-links-grid">
+            <a href="#hero">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#education">Education</a>
+            <a href="#languages">Languages</a>
+            <a href="#contact">Contact</a>
+            <a href="assets/Manasa_Kulal_Resume.pdf" download="Manasa_Kulal_Resume.pdf">Download Resume</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="copyright-text">
+          &copy; <span id="currentYear"></span> <strong>Manasa Kulal</strong>. All rights reserved. Designed for professional internship and career applications.
+        </p>
+
+        <!-- Back to Top Button -->
+        <a href="#hero" class="back-to-top" id="backToTop" aria-label="Back to Top of Page" title="Back to top">
+          <span>Back to Top</span>
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <line x1="12" y1="19" x2="12" y2="5"></line>
+            <polyline points="5 12 12 5 19 12"></polyline>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- MODALS FOR PROJECT DEEP-DIVES -->
+
+  <!-- Modal 1: Translation Tool -->
+  <div class="modal-backdrop" id="modal-translation" role="dialog" aria-modal="true" aria-labelledby="modal1-title" aria-hidden="true">
+    <div class="modal-card">
+      <button class="modal-close-btn" aria-label="Close modal">&times;</button>
+      <div class="modal-header">
+        <span class="modal-badge">AI / Machine Learning</span>
+        <h3 class="modal-title" id="modal1-title">Language Translation Tool</h3>
+        <p class="modal-sub">Python-based cross-language communication system</p>
+      </div>
+      <div class="modal-body">
+        <div class="modal-section">
+          <h4>Project Summary</h4>
+          <p>
+            The Language Translation Tool was designed to help users overcome linguistic barriers and communicate effectively across languages using AI-related techniques. Built with Python, it focuses on automated sentence parsing, mapping, and language synthesis.
+          </p>
+        </div>
+        <div class="modal-section">
+          <h4>Key Features &amp; Workflow</h4>
+          <ul>
+            <li><strong>Text Ingestion:</strong> Accepts multi-line text input in source language.</li>
+            <li><strong>AI-Driven Linguistic Processing:</strong> Analyzes tokens and grammatical patterns to determine optimal translated equivalents.</li>
+            <li><strong>Clean Output Generation:</strong> Delivers converted target text with high readability and context preservation.</li>
+          </ul>
+        </div>
+        <div class="modal-section">
+          <h4>Technologies Used</h4>
+          <div class="modal-tags">
+            <span>Python</span>
+            <span>AI Techniques</span>
+            <span>NLP Concepts</span>
+            <span>Modular Programming</span>
+          </div>
+        </div>
+        <div class="modal-footer-action">
+          <a href="mailto:kulalmanasa93@gmail.com?subject=Inquiry%20Regarding%20Language%20Translation%20Tool&body=Hi%20Manasa,%20I%20would%20like%20to%20discuss%20your%20Language%20Translation%20Tool%20codebase%20and%20implementation." class="btn btn-primary btn-sm">
+            <span>Request Source Code via Email</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 2: FAQ Chatbot -->
+  <div class="modal-backdrop" id="modal-chatbot" role="dialog" aria-modal="true" aria-labelledby="modal2-title" aria-hidden="true">
+    <div class="modal-card">
+      <button class="modal-close-btn" aria-label="Close modal">&times;</button>
+      <div class="modal-header">
+        <span class="modal-badge">NLP &amp; Conversational AI</span>
+        <h3 class="modal-title" id="modal2-title">General FAQ Chatbot</h3>
+        <p class="modal-sub">TF-IDF &amp; Cosine Similarity Query Matcher with Gradio UI</p>
+      </div>
+      <div class="modal-body">
+        <div class="modal-section">
+          <h4>Project Summary</h4>
+          <p>
+            An automated conversational agent developed using Python. It bridges natural language user inquiries with a knowledge base by preprocessing text, vectorizing words using TF-IDF (Term Frequency-Inverse Document Frequency), and scoring cosine similarity to retrieve accurate answers.
+          </p>
+        </div>
+        <div class="modal-section">
+          <h4>Key Features &amp; Algorithmic Pipeline</h4>
+          <ul>
+            <li><strong>Text Preprocessing:</strong> Tokenization, lowercasing, punctuation cleaning, and stop-word removal.</li>
+            <li><strong>TF-IDF Vectorization:</strong> Converts question-answer pairs and incoming queries into sparse numerical vector space.</li>
+            <li><strong>Cosine Similarity Ranking:</strong> Computes angular distance between user query vector and knowledge database questions to retrieve highest-scoring answer.</li>
+            <li><strong>Gradio Web Interface:</strong> Provides an intuitive, responsive chat interface for real-time interaction.</li>
+          </ul>
+        </div>
+        <div class="modal-section">
+          <h4>Technologies Used</h4>
+          <div class="modal-tags">
+            <span>Python</span>
+            <span>TF-IDF</span>
+            <span>Cosine Similarity</span>
+            <span>Text Preprocessing</span>
+            <span>Gradio UI</span>
+          </div>
+        </div>
+        <div class="modal-footer-action">
+          <a href="mailto:kulalmanasa93@gmail.com?subject=Inquiry%20Regarding%20FAQ%20Chatbot&body=Hi%20Manasa,%20I%20would%20like%20to%20discuss%20your%20General%20FAQ%20Chatbot%20implementation%20and%20demo." class="btn btn-primary btn-sm">
+            <span>Request Source Code via Email</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 3: Blood Management System -->
+  <div class="modal-backdrop" id="modal-blood" role="dialog" aria-modal="true" aria-labelledby="modal3-title" aria-hidden="true">
+    <div class="modal-card">
+      <button class="modal-close-btn" aria-label="Close modal">&times;</button>
+      <div class="modal-header">
+        <span class="modal-badge">Web &amp; Database Systems</span>
+        <h3 class="modal-title" id="modal3-title">Blood Management System</h3>
+        <p class="modal-sub">Web-based donor management platform using PHP &amp; MySQL</p>
+      </div>
+      <div class="modal-body">
+        <div class="modal-section">
+          <h4>Project Summary</h4>
+          <p>
+            A full-stack web application engineered to manage blood donation records, donor availability, and emergency recipient queries. It bridges donors and hospitals by maintaining synchronized inventory records in a MySQL relational database running on XAMPP.
+          </p>
+        </div>
+        <div class="modal-section">
+          <h4>Key Features &amp; Architecture</h4>
+          <ul>
+            <li><strong>Donor Registration &amp; Management:</strong> Form for donor onboarding with blood type, contact details, and location tracking.</li>
+            <li><strong>Blood Inventory Tracking:</strong> Live status of blood units classified by group (A+, B+, O+, AB+, etc.).</li>
+            <li><strong>Relational MySQL Schema:</strong> Normalized database tables ensuring data integrity and fast queries via SQL.</li>
+            <li><strong>Interactive UI:</strong> Responsive frontend built with HTML, CSS, and JavaScript for seamless navigation.</li>
+          </ul>
+        </div>
+        <div class="modal-section">
+          <h4>Technologies Used</h4>
+          <div class="modal-tags">
+            <span>PHP</span>
+            <span>MySQL</span>
+            <span>XAMPP</span>
+            <span>HTML5</span>
+            <span>CSS3</span>
+            <span>JavaScript</span>
+            <span>DBMS</span>
+          </div>
+        </div>
+        <div class="modal-footer-action">
+          <a href="mailto:kulalmanasa93@gmail.com?subject=Inquiry%20Regarding%20Blood%20Management%20System&body=Hi%20Manasa,%20I%20would%20like%20to%20discuss%20your%20Blood%20Management%20System%20database%20schema%20and%20codebase." class="btn btn-primary btn-sm">
+            <span>Request Source Code via Email</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Interactive Toast Notification Container -->
+  <div class="toast-container" id="toastContainer" aria-live="polite"></div>
+
+  <!-- Script -->
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Manasa Kulal - Resume | Third-Year B.E. (AI & ML)</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Outfit:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #7C3AED;
+      --primary-dark: #5B21B6;
+      --accent: #EC4899;
+      --dark: #0F172A;
+      --text: #334155;
+      --muted: #64748B;
+      --border: #E2E8F0;
+      --bg: #F8FAFC;
+    }
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.5;
+      padding: 2rem 1rem;
+    }
+    .resume-toolbar {
+      max-width: 800px;
+      margin: 0 auto 1.5rem auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+    .back-btn, .action-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      text-decoration: none;
+      padding: 0.6rem 1.2rem;
+      border-radius: 8px;
+      font-weight: 600;
+      font-size: 0.9rem;
+      transition: all 0.2s ease;
+      cursor: pointer;
+    }
+    .back-btn {
+      background: #FFFFFF;
+      color: var(--dark);
+      border: 1px solid var(--border);
+    }
+    .back-btn:hover {
+      background: #F1F5F9;
+    }
+    .action-btn {
+      background: linear-gradient(135deg, var(--primary), var(--accent));
+      color: #FFFFFF;
+      border: none;
+      box-shadow: 0 4px 12px rgba(124, 58, 237, 0.25);
+    }
+    .action-btn:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 6px 16px rgba(124, 58, 237, 0.35);
+    }
+    .resume-container {
+      max-width: 800px;
+      margin: 0 auto;
+      background: #FFFFFF;
+      padding: 3rem;
+      border-radius: 12px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+      border: 1px solid var(--border);
+    }
+    .resume-header {
+      text-align: center;
+      padding-bottom: 1.5rem;
+      border-bottom: 2px solid var(--border);
+    }
+    .resume-name {
+      font-family: 'Outfit', sans-serif;
+      font-size: 2.2rem;
+      font-weight: 800;
+      color: var(--primary-dark);
+      letter-spacing: 0.5px;
+    }
+    .resume-title {
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: var(--accent);
+      margin-top: 0.25rem;
+    }
+    .resume-contact {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+      font-size: 0.85rem;
+      color: var(--muted);
+      margin-top: 0.75rem;
+    }
+    .resume-contact a {
+      color: var(--primary);
+      text-decoration: none;
+      font-weight: 500;
+    }
+    .resume-contact a:hover {
+      text-decoration: underline;
+    }
+    .resume-section {
+      margin-top: 1.5rem;
+    }
+    .section-title {
+      font-family: 'Outfit', sans-serif;
+      font-size: 1rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: var(--primary-dark);
+      border-bottom: 1.5px solid var(--primary);
+      padding-bottom: 0.3rem;
+      margin-bottom: 0.8rem;
+    }
+    .summary-text {
+      font-size: 0.92rem;
+      color: var(--text);
+      text-align: justify;
+      line-height: 1.6;
+    }
+    .item-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      font-weight: 700;
+      font-size: 0.95rem;
+      color: var(--dark);
+    }
+    .item-sub {
+      color: var(--primary);
+      font-weight: 600;
+      font-size: 0.9rem;
+      margin-top: 0.1rem;
+    }
+    .item-standing {
+      font-size: 0.85rem;
+      color: var(--accent);
+      font-weight: 600;
+    }
+    .project-card-resume {
+      margin-bottom: 1rem;
+    }
+    .project-title {
+      font-weight: 700;
+      font-size: 0.95rem;
+      color: var(--dark);
+    }
+    .project-tech {
+      color: var(--primary);
+      font-weight: 600;
+      font-size: 0.85rem;
+      margin-bottom: 0.25rem;
+    }
+    ul.bullet-list {
+      list-style-type: square;
+      padding-left: 1.2rem;
+      margin-top: 0.25rem;
+    }
+    ul.bullet-list li {
+      font-size: 0.88rem;
+      color: var(--text);
+      margin-bottom: 0.2rem;
+      line-height: 1.5;
+    }
+    .skills-grid {
+      display: grid;
+      grid-template-columns: 140px 1fr;
+      gap: 0.4rem 1rem;
+      font-size: 0.88rem;
+    }
+    .skills-label {
+      font-weight: 700;
+      color: var(--dark);
+    }
+    .skills-value {
+      color: var(--text);
+    }
+    .languages-line {
+      font-size: 0.9rem;
+      color: var(--text);
+    }
+    @media print {
+      body {
+        padding: 0;
+        background: #FFFFFF;
+      }
+      .resume-toolbar {
+        display: none;
+      }
+      .resume-container {
+        box-shadow: none;
+        border: none;
+        padding: 0;
+        max-width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="resume-toolbar">
+    <a href="../index.html" class="back-btn">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+      Back to Portfolio
+    </a>
+    <div style="display: flex; gap: 0.75rem;">
+      <button onclick="window.print()" class="back-btn">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 6 2 18 2 18 9"></polyline><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path><rect x="6" y="14" width="12" height="8"></rect></svg>
+        Print / Save as PDF
+      </button>
+      <a href="Manasa_Kulal_Resume.pdf" download="Manasa_Kulal_Resume.pdf" class="action-btn">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+        Download PDF
+      </a>
+    </div>
+  </div>
+
+  <main class="resume-container">
+    <header class="resume-header">
+      <h1 class="resume-name">MANASA KULAL</h1>
+      <p class="resume-title">Third-Year B.E. Student in Computer Science and Engineering (AI & ML)</p>
+      <div class="resume-contact">
+        <span>📍 Mangalore, Karnataka, India</span>
+        <span>📞 <a href="tel:9483649608">9483649608</a></span>
+        <span>✉️ <a href="mailto:kulalmanasa93@gmail.com">kulalmanasa93@gmail.com</a></span>
+        <span>🔗 <a href="https://www.linkedin.com/in/manasa-kulal-204542434" target="_blank" rel="noopener noreferrer">LinkedIn Profile</a></span>
+      </div>
+    </header>
+
+    <section class="resume-section">
+      <h2 class="section-title">Professional Summary</h2>
+      <p class="summary-text">
+        Driven Third-Year B.E. Computer Science and Engineering student specializing in Artificial Intelligence and Machine Learning (AI & ML) at AJ Institute of Engineering and Technology, Mangalore. Solid foundational proficiency in Python, C programming, machine learning, and relational databases. Experienced in implementing practical AI-driven applications, including language translation and NLP-powered chatbots, alongside web-based database management systems. Seeking internship opportunities to contribute strong analytical, algorithmic, and software development skills.
+      </p>
+    </section>
+
+    <section class="resume-section">
+      <h2 class="section-title">Education</h2>
+      <div>
+        <div class="item-header">
+          <span>AJ Institute of Engineering and Technology, Mangalore</span>
+          <span>2024 – 2028 (Expected Graduation)</span>
+        </div>
+        <div class="item-sub">Bachelor of Engineering (B.E.) — Computer Science & Engineering (AI & ML)</div>
+        <div class="item-standing">Academic Standing: Third-Year Student</div>
+      </div>
+    </section>
+
+    <section class="resume-section">
+      <h2 class="section-title">Technical & Soft Skills</h2>
+      <div class="skills-grid">
+        <div class="skills-label">Core Languages:</div>
+        <div class="skills-value">Python, C Programming</div>
+
+        <div class="skills-label">AI & ML:</div>
+        <div class="skills-value">Artificial Intelligence, Machine Learning, Text Preprocessing, TF-IDF, Cosine Similarity</div>
+
+        <div class="skills-label">Web & Database:</div>
+        <div class="skills-value">HTML, CSS, JavaScript, DBMS, MySQL, PHP, XAMPP</div>
+
+        <div class="skills-label">Soft Skills:</div>
+        <div class="skills-value">Communication, Analytical Problem-Solving, Teamwork, Time Management, Creative Thinking</div>
+      </div>
+    </section>
+
+    <section class="resume-section">
+      <h2 class="section-title">Projects</h2>
+      
+      <div class="project-card-resume">
+        <div class="project-title">1. Language Translation Tool</div>
+        <div class="project-tech">Tech Stack: Python, AI & NLP Concepts</div>
+        <ul class="bullet-list">
+          <li>Engineered a Python-based language translation utility to enable cross-linguistic communication through AI techniques.</li>
+          <li>Structured modular text processing pipelines to translate inputs accurately across supported languages.</li>
+        </ul>
+      </div>
+
+      <div class="project-card-resume">
+        <div class="project-title">2. General FAQ Chatbot</div>
+        <div class="project-tech">Tech Stack: Python, Text Preprocessing, TF-IDF, Cosine Similarity, Gradio</div>
+        <ul class="bullet-list">
+          <li>Constructed an intelligent FAQ chatbot utilizing natural language preprocessing, TF-IDF vectorization, and cosine similarity for contextual answer retrieval.</li>
+          <li>Created an interactive and responsive web interface using Gradio for easy user query submission and instant responses.</li>
+        </ul>
+      </div>
+
+      <div class="project-card-resume">
+        <div class="project-title">3. Blood Management System</div>
+        <div class="project-tech">Tech Stack: PHP, MySQL, XAMPP, HTML, JavaScript</div>
+        <ul class="bullet-list">
+          <li>Designed a web-based donor management platform to streamline donor registration, blood inventory management, and recipient requests.</li>
+          <li>Developed normalized relational MySQL database schemas and created responsive front-end forms with client-side validation.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="resume-section">
+      <h2 class="section-title">Certifications</h2>
+      <div>
+        <div class="item-header">
+          <span>Infosys Springboard Certification</span>
+          <span>Certified Coursework</span>
+        </div>
+        <div class="item-sub">Python, AI/ML Fundamentals & Core Technologies</div>
+        <ul class="bullet-list">
+          <li>Completed specialized curriculum covering Python development, machine learning fundamentals, and practical computing principles.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="resume-section">
+      <h2 class="section-title">Languages</h2>
+      <p class="languages-line">
+        <strong>English</strong> (Professional Working Proficiency) &bull; <strong>Kannada</strong> (Fluent) &bull; <strong>Tulu</strong> (Native) &bull; <strong>Hindi</strong> (Conversational)
+      </p>
+    </section>
+  </main>
+
+</body>
+</html>
